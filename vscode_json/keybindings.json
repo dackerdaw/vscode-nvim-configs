@@ -150,22 +150,8 @@
         "when": "!terminalFocus"
     },
     {
-        "key": "ctrl+j",
-        "command": "-editor.action.insertLineAfter",
-        "when": "editorTextFocus && neovim.ctrlKeysInsert && !neovim.recording && neovim.mode == 'insert'"
-    },
-    {
-        "key": "alt+j",
-        "command": "workbench.action.terminal.focus",
-        "when": "!terminalFocus"
-    },
-    {
         "key": "alt+h",
         "command": "workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
     },
     {
         "key": "shift+k",
@@ -186,5 +172,26 @@
         "key": "ctrl+f",
         "command": "-vscode-neovim.ctrl-f",
         "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+    },
+    // cursor navigation in insert mode
+    {
+        "key": "ctrl+h",
+        "command": "cursorLeft",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert && !neovim.recording && neovim.mode == 'insert'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "cursorDown",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert && !neovim.recording && neovim.mode == 'insert'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "cursorUp",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert && !neovim.recording && neovim.mode == 'insert'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "cursorRight",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert && !neovim.recording && neovim.mode == 'insert'"
     }
 ]
