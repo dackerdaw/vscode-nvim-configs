@@ -31,6 +31,12 @@
       "args": "<C-/>"
     },
     {
+      "key": "x",
+      "name": "Close active editor",
+      "type": "command",
+      "command": "workbench.action.closeActiveEditor"
+    },
+    {
       "key": "b",
       "name": "Buffers/Editors...",
       "type": "bindings",
