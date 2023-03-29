@@ -62,3 +62,6 @@ vim.api.nvim_set_keymap("x", "<C-l>", ":call VSCodeNotify('workbench.action.navi
 -- whichkey
 vim.api.nvim_set_keymap("n", "<Leader>", ":call VSCodeNotify('whichkey.show')<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("x", "<Leader>", ":call VSCodeNotify('whichkey.show')<CR>", { noremap = true, silent = true })
+
+-- clear highlights
+vim.api.nvim_set_keymap("n", "<Esc>", ":noh <CR>", { noremap = true, silent = true })
