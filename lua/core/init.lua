@@ -56,6 +56,14 @@ vim.api.nvim_set_keymap("n", "k", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"'
 vim.api.nvim_set_keymap("n", "<Down>", 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', { expr = true })
 vim.api.nvim_set_keymap("n", "<Up>", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', { expr = true })
 
+-- vim.api.nvim_set_keymap("v", "<Down>", 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', { expr = true })
+-- vim.api.nvim_set_keymap("v", "<Up>", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', { expr = true })
+-- vim.api.nvim_set_keymap("x", "j", 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', { expr = true })
+-- vim.api.nvim_set_keymap("x", "k", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', { expr = true })
+-- Don't copy the replaced text after pasting in visual mode
+-- https://vim.fandom.com/wiki/Replace_a_word_with_yanked_text#Alternative_mapping_for_paste
+vim.api.nvim_set_keymap("x", "p", 'p:let @+=@0<CR>:let @"=@0<CR>', { silent = true })
+
 -- split window navigation navigation
 vim.api.nvim_set_keymap("n", "<C-j>", ":call VSCodeNotify('workbench.action.navigateDown')<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("x", "<C-j>", ":call VSCodeNotify('workbench.action.navigateDown')<CR>", { noremap = true, silent = true })
