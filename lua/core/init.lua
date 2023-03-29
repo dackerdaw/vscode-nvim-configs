@@ -45,11 +45,20 @@ opt.whichwrap:append "<>[]hl"
 
 
 -------------------------------------- mappings ------------------------------------------
+vim.g.mapleader = " "
 vim.api.nvim_set_keymap("n", "j", "v:count ? 'j' : 'gj'", { noremap = true, expr = true })
 vim.api.nvim_set_keymap("n", "k", "v:count ? 'k' : 'gk'", { noremap = true, expr = true })
 
--- workbench navigation
+-- split window navigation navigation
 vim.api.nvim_set_keymap("n", "<C-j>", ":call VSCodeNotify('workbench.action.navigateDown')<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "<C-j>", ":call VSCodeNotify('workbench.action.navigateDown')<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-k>", ":call VSCodeNotify('workbench.action.navigateUp')<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "<C-k>", ":call VSCodeNotify('workbench.action.navigateUp')<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-h>", ":call VSCodeNotify('workbench.action.navigateLeft')<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "<C-h>", ":call VSCodeNotify('workbench.action.navigateLeft')<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-l>", ":call VSCodeNotify('workbench.action.navigateRight')<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "<C-l>", ":call VSCodeNotify('workbench.action.navigateRight')<CR>", { noremap = true, silent = true })
+
+-- whichkey
+vim.api.nvim_set_keymap("n", "<Leader>", ":call VSCodeNotify('whichkey.show')<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "<Leader>", ":call VSCodeNotify('whichkey.show')<CR>", { noremap = true, silent = true })
