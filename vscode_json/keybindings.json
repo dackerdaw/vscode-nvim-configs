@@ -53,4 +53,21 @@
         "command": "cursorRight",
         "when": "editorTextFocus && neovim.ctrlKeysInsert && !neovim.recording && neovim.mode == 'insert'"
     },
+    // tab navigation
+    {
+        "key": "tab",
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus && neovim.mode == 'normal'"
+    },
+    {
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus && neovim.mode == 'normal'"
+    },
+    // toggle explorer like in nvim-tree
+    // {
+    //     "key": "ctrl+n",
+    //     "type": "command",
+    //     "command": "workbench.action.toggleSidebarVisibility"
+    // },
 ]

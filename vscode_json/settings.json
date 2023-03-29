@@ -9,7 +9,6 @@
     // start nvim vscode
     "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
     "diffEditor.ignoreTrimWhitespace": false,
-    "vscode-neovim.neovimInitVimPaths.win32": "C:\\home\\nvim\\init.vim",
     "editor.scrollBeyondLastLine": false, // recommended by neovim
     "editor.lineNumbers": "relative",
     "extensions.experimental.affinity": {
@@ -17,19 +16,6 @@
     },
     "whichkey.sortOrder": "alphabetically",
     "whichkey.bindings": [
-    {
-      "key": ";",
-      "name": "commands",
-      "type": "command",
-      "command": "workbench.action.showCommands"
-    },
-    {
-      "key": "/",
-      "name": "comment",
-      "type": "command",
-      "command": "vscode-neovim.send",
-      "args": "<C-/>"
-    },
     {
       "key": "x",
       "name": "Close active editor",
@@ -46,12 +32,6 @@
           "name": "Show all buffers/editors",
           "type": "command",
           "command": "workbench.action.showAllEditors"
-        },
-        {
-          "key": "d",
-          "name": "Close active editor",
-          "type": "command",
-          "command": "workbench.action.closeActiveEditor"
         },
         {
           "key": "h",
@@ -82,24 +62,6 @@
           "name": "Close other editors",
           "type": "command",
           "command": "workbench.action.closeOtherEditors"
-        },
-        {
-          "key": "n",
-          "name": "Next editor",
-          "type": "command",
-          "command": "workbench.action.nextEditor"
-        },
-        {
-          "key": "p",
-          "name": "Previous editor",
-          "type": "command",
-          "command": "workbench.action.previousEditor"
-        },
-        {
-          "key": "N",
-          "name": "New untitled editor",
-          "type": "command",
-          "command": "workbench.action.files.newUntitledFile"
         },
         {
           "key": "u",
@@ -217,34 +179,21 @@
       ]
     },
     {
-      "key": "e",
-      "name": "Toggle Explorer",
-      "type": "command",
-      "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
       "key": "f",
-      "name": "Find & Replace...",
+      "name": "telescope",
       "type": "bindings",
       "bindings": [
         {
+          "key": "w",
+          "name": "Workspace",
+          "type": "command",
+          "command": "workbench.action.findInFiles"
+        },
+        {
           "key": "f",
-          "name": "File",
+          "name": "files",
           "type": "command",
-          "command": "editor.action.startFindReplaceAction"
-        },
-        {
-          "key": "s",
-          "name": "Symbol",
-          "type": "command",
-          "command": "editor.action.rename",
-          "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-        },
-        {
-          "key": "p",
-          "name": "Project",
-          "type": "command",
-          "command": "workbench.action.replaceInFiles"
+          "command": "workbench.action.quickOpen"
         }
       ]
     },
@@ -346,38 +295,11 @@
         }
       ]
     },
-
     {
       "key": "m",
       "name": "minimap",
       "type": "command",
       "command": "editor.action.toggleMinimap"
-    },
-    {
-      "key": "n",
-      "name": "highlight",
-      "type": "command",
-      "command": "vscode-neovim.send",
-      "args": ":noh<CR>"
-    },
-    {
-      "key": "s",
-      "name": "Search...",
-      "type": "bindings",
-      "bindings": [
-        {
-          "key": "f",
-          "name": "files",
-          "type": "command",
-          "command": "workbench.action.quickOpen"
-        },
-        {
-          "key": "t",
-          "name": "text",
-          "type": "command",
-          "command": "workbench.action.findInFiles"
-        }
-      ]
     },
     {
       "key": "S",
@@ -441,19 +363,6 @@
       ]
     },
     {
-      "key": "t",
-      "name": "Terminal...",
-      "type": "bindings",
-      "bindings": [
-        {
-          "key": "t",
-          "name": "Toggle Terminal",
-          "type": "command",
-          "command": "workbench.action.togglePanel"
-        }
-      ]
-    },
-    {
       "key": "T",
       "name": "UI toggles...",
       "type": "bindings",
@@ -463,12 +372,6 @@
           "name": "Toggle side bar visibility",
           "type": "command",
           "command": "workbench.action.toggleSidebarVisibility"
-        },
-        {
-          "key": "j",
-          "name": "Toggle panel visibility",
-          "type": "command",
-          "command": "workbench.action.togglePanel"
         },
         {
           "key": "F",
