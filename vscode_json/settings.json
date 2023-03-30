@@ -3,6 +3,7 @@
     "explorer.confirmDelete": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "editor.wordWrap": "on",
+    "editor.cursorSurroundingLines": 4,
     "[python]": {
         "editor.formatOnType": true
     },
@@ -194,7 +195,7 @@
           "name": "files",
           "type": "command",
           "command": "workbench.action.quickOpen"
-        }
+        },
       ]
     },
     {
@@ -497,4 +498,5 @@
       "command": "workbench.action.toggleZenMode"
     }
   ],
+  "workbench.colorTheme": "Default Dark+ Experimental",
 }
