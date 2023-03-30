@@ -500,4 +500,5 @@
   ],
   "workbench.colorTheme": "Default Dark+ Experimental",
   "window.zoomLevel": 1,
+  "workbench.iconTheme": "material-icon-theme",
 }
