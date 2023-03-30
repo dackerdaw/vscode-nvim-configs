@@ -501,4 +501,6 @@
   "workbench.colorTheme": "Default Dark+ Experimental",
   "window.zoomLevel": 1,
   "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontLigatures": true,
 }
