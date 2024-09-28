@@ -1,18 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    // enter normal mode with jk
-    {
-        "command": "vscode-neovim.compositeEscape1",
-        "key": "j",
-        "when": "neovim.mode == insert && editorTextFocus",
-        "args": "j"
-    },
-    {
-        "command": "vscode-neovim.compositeEscape2",
-        "key": "k",
-        "when": "neovim.mode == insert && editorTextFocus",
-        "args": "k"
-    },
+    /// UI navigation
     {
         "key": "ctrl+l",
         "when": "sideBarFocus",
@@ -32,7 +20,12 @@
         "key": "alt+h",
         "command": "workbench.action.togglePanel"
     },
-    // cursor navigation in insert mode
+    {
+        "key": "ctrl+n",
+        "type": "command",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    /* // cursor navigation in insert mode (no longer necessary because we use OS-level override for arrow keys shortcut)
     {
         "key": "ctrl+h",
         "command": "cursorLeft",
@@ -52,7 +45,7 @@
         "key": "ctrl+l",
         "command": "cursorRight",
         "when": "editorTextFocus && neovim.ctrlKeysInsert && !neovim.recording && neovim.mode == 'insert'"
-    },
+    }, */
     // tab navigation
     {
         "key": "tab",
@@ -64,10 +57,5 @@
         "command": "workbench.action.previousEditor",
         "when": "editorTextFocus && neovim.mode == 'normal'"
     },
-    // toggle explorer like in nvim-tree
-    // {
-    //     "key": "ctrl+n",
-    //     "type": "command",
-    //     "command": "workbench.action.toggleSidebarVisibility"
-    // },
+    
 ]
