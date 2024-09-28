@@ -5,6 +5,11 @@
     },
     "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
     "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\jadul\\AppData\\Local\\nvim\\init.lua",
+    "vscode-neovim.compositeKeys": {
+        "jk": {
+            "command": "vscode-neovim.escape",
+        }
+    },
     //////////// vscode
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDragAndDrop": false,
